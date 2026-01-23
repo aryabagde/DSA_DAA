@@ -5,7 +5,7 @@ using namespace std;
 int main(){
     int num;
     cin>>num;
-    if(num == 2){
+    if(num == 2){  // trivial case of 2
         cout<<"No";
     }
     else{
