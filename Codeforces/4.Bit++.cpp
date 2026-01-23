@@ -10,7 +10,7 @@ int main(){
     for(int i=0; i<n; i++){
         cin>>nam;
         if(nam[0] == 'X'){
-            if(nam[1] == '+'){
+            if(nam[1] == '+'){  // to check for string use "" and for char u can use ''
                 count += 1;
             }
             else{
