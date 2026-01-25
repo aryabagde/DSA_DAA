@@ -1,14 +1,9 @@
-Primitive variables:
-10 3.5 3.14159 A 1
-Const variable: 50
-Auto variable: 20
-Local variable: 5
-Global variable: 100
-Array elements: 1 2 3 
-Pointer value (address of a): 0x61fed4
-Pointer dereference (*ptr): 10
-Reference variable (ref): 10
-User-defined variable (Student roll): 101
-Static variable value: 1
-Static variable value: 2
-Static variable value: 3
+40000
+Current element inside stack: 4
+Count for the stack:1
+60000
+00000
+Stack is empty
+Stack is not full
+Stack is empty
+Count for the stack:0
