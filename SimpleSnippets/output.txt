@@ -1,0 +1,14 @@
+Primitive variables:
+10 3.5 3.14159 A 1
+Const variable: 50
+Auto variable: 20
+Local variable: 5
+Global variable: 100
+Array elements: 1 2 3 
+Pointer value (address of a): 0x61fed4
+Pointer dereference (*ptr): 10
+Reference variable (ref): 10
+User-defined variable (Student roll): 101
+Static variable value: 1
+Static variable value: 2
+Static variable value: 3
