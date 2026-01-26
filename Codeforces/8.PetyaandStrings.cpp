@@ -8,7 +8,7 @@ int main(){
     flag = 0;
     cin>>inp1>>inp2;
     for(int i=0; i<inp1.length(); i++){
-        inp1[i] = (char) tolower(inp1[i]);
+        inp1[i] = (char) tolower(inp1[i]); //if u don't write (char) it will return an ASCII value
     }
     for(int j=0; j<inp2.length(); j++){
         inp2[j] = (char) tolower(inp2[j]);
