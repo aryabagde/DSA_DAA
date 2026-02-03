@@ -14,24 +14,36 @@ void staticExample() {
     staticVar++;
     cout << "Static variable value: " << staticVar << endl;
 }
-
+//static variable is used to keep a tag on functions since the variable initialized in a function are deleted once the functions is over this can be used for next loops these variables have memory 
+//static varibles cannot be different for different objects, so DO NOT USE this in a constructor also they are initialized only once in the entire program
+// There is also global static variables
 int main() {
 
     /* ---------- Primitive / Built-in Variables ---------- */
-    int a = 10;
+    int a = 10;  //bigger int would be long
     float b = 3.5f;
     double c = 3.14159;
-    char d = 'A';
+    char d = 'A';  // there is also string
     bool e = true;
 
     /* ---------- const Variable ---------- */
-    const int CONST_VAR = 50;
+    const int CONST_VAR = 50;  // a variable whose value cannot be changed after it is initialized
 
     /* ---------- auto Variable ---------- */
-    auto autoVar = 20;      // compiler deduces int
-
+    auto autoVar = 20;      // utomatically detects the type of a variable based on the value you assign to it
+    // in C the auto keyword has different meaning than Cpp
     /* ---------- Local Variable ---------- */
     int localVar = 5;
+
+    //--------------EXtern Variable ------------ //share variables from different files
+    // file1.cpp (Definition)
+    int sharedVar = 42; 
+
+    // file2.cpp (Declaration)
+    extern int sharedVar; // Informs compiler that sharedVar is defined elsewhere
+
+    //----------Register Variable------------- 
+    //This has been removed from Cpp, only there in C
 
     /* ---------- Derived Variables ---------- */
     int arr[3] = {1, 2, 3};     // array
