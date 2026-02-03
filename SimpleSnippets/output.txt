@@ -1,9 +1,35 @@
-40000
-Current element inside stack: 4
-Count for the stack:1
-60000
-00000
-Stack is empty
-Stack is not full
-Stack is empty
-Count for the stack:0
+=== PRIMITIVE DATA TYPES ===
+10 3.14 3.14159 A 1
+
+=== MODIFIERS ===
+5 100000 999999999 20
+
+=== DERIVED DATA TYPES ===
+Array: 1 2 3 
+Pointer: 10
+Reference: 10
+
+=== STRING ===
+Hello C++
+
+=== USER DEFINED TYPES ===
+1 Arya
+10 20
+100
+0 0
+1000 123456789
+
+=== STL CONTAINERS ===
+Vector: 1 2 3 
+Array: 4 5 6 
+Set: 1 2 3 
+Map: 1:one 2:two 
+Unordered Map: b:2 a:1 
+
+=== MODERN C++ TYPES ===
+1 tuple 3.5
+Optional: 10
+Variant String
+42
+
+=== END OF ALL DATA TYPES ===
