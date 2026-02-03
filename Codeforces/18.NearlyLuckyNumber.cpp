@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 int luckynumber(int num){
@@ -15,7 +16,8 @@ int luckynumber(int num){
 }
 
 int main(){
-    int n, count = 0;
+    long long n;
+    int count = 0;
     cin>>n;
     string real_value = to_string(n);
     for(int j =0; j<real_value.length(); j++){
