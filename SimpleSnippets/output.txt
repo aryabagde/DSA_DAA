@@ -1,35 +1,62 @@
-=== PRIMITIVE DATA TYPES ===
-10 3.14 3.14159 A 1
+===== ARITHMETIC OPERATORS =====
+a + b = 13
+a - b = 7
+a * b = 30
+a / b = 3
+a % b = 1
 
-=== MODIFIERS ===
-5 100000 999999999 20
+===== RELATIONAL (COMPARISON) OPERATORS =====
+a == b : 0
+a != b : 1
+a > b  : 1
+a < b  : 0
+a >= b : 1
+a <= b : 0
 
-=== DERIVED DATA TYPES ===
-Array: 1 2 3 
-Pointer: 10
-Reference: 10
+===== LOGICAL OPERATORS =====
+x && y : 0
+x || y : 1
+!x     : 0
 
-=== STRING ===
-Hello C++
+===== ASSIGNMENT OPERATORS =====
+c += 3 -> 8
+c -= 2 -> 6
+c *= 2 -> 12
+c /= 2 -> 6
+c %= 3 -> 0
 
-=== USER DEFINED TYPES ===
-1 Arya
-10 20
-100
-0 0
-1000 123456789
+===== INCREMENT / DECREMENT OPERATORS =====
+d++ = 5
+++d = 7
+d-- = 7
+--d = 5
 
-=== STL CONTAINERS ===
-Vector: 1 2 3 
-Array: 4 5 6 
-Set: 1 2 3 
-Map: 1:one 2:two 
-Unordered Map: b:2 a:1 
+===== BITWISE OPERATORS =====
+p & q  = 1
+p | q  = 7
+p ^ q  = 6
+~p     = -6
+p << 1 = 10
+p >> 1 = 2
 
-=== MODERN C++ TYPES ===
-1 tuple 3.5
-Optional: 10
-Variant String
-42
+===== CONDITIONAL (TERNARY) OPERATOR =====
+Max of a and b = 10
 
-=== END OF ALL DATA TYPES ===
+===== SIZEOF OPERATOR =====
+sizeof(int) = 4
+sizeof(double) = 8
+
+===== COMMA OPERATOR =====
+e = (a=2, b=4, a+b) -> 6
+
+===== ADDRESS & DEREFERENCE OPERATORS =====
+Address of num = 0x1c5fff854
+Value using *ptr = 10
+
+===== TYPE CASTING OPERATOR =====
+(double)a / b = 0.5
+
+===== MEMBER ACCESS OPERATORS =====
+pt.x = 5, pt.y = 10
+
+===== END OF ALL C++ OPERATORS =====
