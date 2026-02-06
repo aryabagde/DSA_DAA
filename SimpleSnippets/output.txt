@@ -1,62 +1,12 @@
-===== ARITHMETIC OPERATORS =====
-a + b = 13
-a - b = 7
-a * b = 30
-a / b = 3
-a % b = 1
-
-===== RELATIONAL (COMPARISON) OPERATORS =====
-a == b : 0
-a != b : 1
-a > b  : 1
-a < b  : 0
-a >= b : 1
-a <= b : 0
-
-===== LOGICAL OPERATORS =====
-x && y : 0
-x || y : 1
-!x     : 0
-
-===== ASSIGNMENT OPERATORS =====
-c += 3 -> 8
-c -= 2 -> 6
-c *= 2 -> 12
-c /= 2 -> 6
-c %= 3 -> 0
-
-===== INCREMENT / DECREMENT OPERATORS =====
-d++ = 5
-++d = 7
-d-- = 7
---d = 5
-
-===== BITWISE OPERATORS =====
-p & q  = 1
-p | q  = 7
-p ^ q  = 6
-~p     = -6
-p << 1 = 10
-p >> 1 = 2
-
-===== CONDITIONAL (TERNARY) OPERATOR =====
-Max of a and b = 10
-
-===== SIZEOF OPERATOR =====
-sizeof(int) = 4
-sizeof(double) = 8
-
-===== COMMA OPERATOR =====
-e = (a=2, b=4, a+b) -> 6
-
-===== ADDRESS & DEREFERENCE OPERATORS =====
-Address of num = 0x1c5fff854
-Value using *ptr = 10
-
-===== TYPE CASTING OPERATOR =====
-(double)a / b = 0.5
-
-===== MEMBER ACCESS OPERATORS =====
-pt.x = 5, pt.y = 10
-
-===== END OF ALL C++ OPERATORS =====
+Array elements: 10 20 30 40 50 
+Size of array: 5
+Enter 3 elements: Input array: 3 24 0 
+Element 30 found at index: 2
+Sorted array: 10 20 30 40 50 
+2D Array:
+1 2 3 
+4 5 6 
+Dynamic array: 10 20 30 40 
+std::array elements: 5 10 15 20 
+First element: 5
+Last element: 20
