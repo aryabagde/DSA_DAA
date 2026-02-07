@@ -11,6 +11,7 @@ int main(){
         else darik++;
     }
     if(anton>darik) cout<<"Anton";
-    else cout<<"Danik";
+    else if(darik>anton) cout<<"Danik";
+    else cout<<"Friendship";
     return 0;
 }
