@@ -23,3 +23,6 @@ int main(){
 
 // char is the data type for character 
 // for char we will use only single '' and for string we will use "" 
+// then comes the if else and switch loops
+// then comes the function and pass by value and pass by reference
+// imp arrays are always passed by reference 
