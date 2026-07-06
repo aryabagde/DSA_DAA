@@ -2,8 +2,24 @@
 using namespace std;
 
 int main(){
-    int a;
-    cin>>a;
-    cout<<a;
+    string s;
+    getline(cin, s);
+    cout<<s;
     return 0;
 }
+// Data types : int 
+//             long 
+//             long long
+//             float
+//             double
+//             string: it will only consider till the space like if the input is "hello arya"
+//             for input string will consider only till hey for arya u need another string
+//             so cin>>s1>>s2 for this thing
+
+
+//    Get line: in order to get the whole input from the terminal we will use this datatytpe or this syntax
+//    getline(cin, str)
+//    cout<<str
+
+// char is the data type for character 
+// for char we will use only single '' and for string we will use "" 
