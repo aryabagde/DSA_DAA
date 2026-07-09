@@ -23,7 +23,7 @@ int main(){
         cout<<endl;
         m++;
     }
-    m=n;
+    m=n-1;
     for(int i=n; i>=1; i--){
         for(int j=k; j>=1; j--){
             if(j<=n-m){
