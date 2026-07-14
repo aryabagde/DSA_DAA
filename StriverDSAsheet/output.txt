@@ -1,4 +1,4 @@
-   A   
-  ABA  
- ABCBA 
-ABCDCBA
+D
+CD
+BCD
+ABCD
