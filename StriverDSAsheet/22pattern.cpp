@@ -22,7 +22,7 @@ int main(){
             if(m>((2*n-2)/2)){
                 m = (2*n-2)-m;
             }
-            cout<<(4-min(l,m));
+            cout<<(n-min(l,m));
         }
         cout<<endl;
     }
