@@ -109,5 +109,38 @@ int main(){
     v4.empty() // this can be used to check the condition
 
 
+    ////////////////List Container/////////////
+
+    //similar to the vector just has push_front instead of insert 
+    //insert is costlier instead of push_front
+    list<int> ls= {2,3,4,45,2};
+    ls.push_back(5);
+    ls.emplace_back(7);
+    ls.push_front(1);
+    ls.emplace_front(3);
+    //rest of the functions are similar to the vector
+
+    //////////////////////Dequeue////////////////////
+
+    //similar to the list and vector only thing is u can pop_back and pop_front using dequeue
+
+    dequeue<int> dq;
+    dq.push_back(2);
+    dq.emplace_back(5);
+    dq.emplace_front(7);
+    dq.push_front(8);
+
+    dq.pop_back();
+    dq.pop_front();
+
+    dq.back();
+    dq.front();
+
+    //rest of the functions are same as vector and list begin, end, rbegin, rend, clear, insert, empty, size, swap
+
+    ////////////////////// STACK ////////////////////////////
+
+    
+
     return 0;
 }
