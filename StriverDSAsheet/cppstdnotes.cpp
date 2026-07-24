@@ -100,13 +100,13 @@ int main(){
     v4.pop_back();
 
     //if we want to swap the vectors 
-    v1.swap(v4); // we can also do this while initialization
+    v3.swap(v4); // we can also do this while initialization
 
     //clear the vector
     v4.clear(); //erases the entire vector
 
     // to check if the vector are empty or not 
-    v4.empty() // this can be used to check the condition
+    v4.empty(); // this can be used to check the condition
 
 
     ////////////////List Container/////////////
@@ -124,7 +124,7 @@ int main(){
 
     //similar to the list and vector only thing is u can pop_back and pop_front using dequeue
 
-    dequeue<int> dq;
+    deque<int> dq;
     dq.push_back(2);
     dq.emplace_back(5);
     dq.emplace_front(7);
@@ -140,7 +140,111 @@ int main(){
 
     ////////////////////// STACK ////////////////////////////
 
+    stack<int> st;
+    // only 3 things are important in stack top, push and pop
+    // remember it follows lifo
+
+    st.push(3);
+    st.push(5);
+    st.push(9);
+    st.push(0);
+    st.emplace(5);
+    cout<<st.top();
+    st.pop();
+    cout<<st.size();
+    cout<<st.empty();
+    //and more functions like swap will also work in this scenario
+
+    /////////////////////////////// QUEUE /////////////////////////////
+    //here we can use front, back, 
+    queue<int> qt;
+    qt.push(3);
+    qt.push(7);
+    qt.push(8);
+    qt.pop();
+    qt.pop();
+
+    qt.back();
+    qt.front();
+    //here instead of top we can access the back and the front
+
+    ////////////////////////////// Priority Queue mainly called as Max Heap/////////////////////////
+
+    // It is like a stack just that the bigger number stays on the top
+    // It is not a linear data structure, it is a max heap for minimum priority it will be min heap
+    priority_queue<int> pq;
+
+    pq.push(8);
+    pq.push(7);
+    pq.push(10);
+    pq.push(1);
+    pq.emplace(0);
+
+    cout<<pq.top();
+
+    pq.pop();
+    //other functions are size and empty
+
+    ////////////////////////////////// Minimum Heap //////////////////////////////////////////
+
+    priority_queue<int, vector<int>, greater<int>> pq;
+    pq.push(8);
+    pq.push(9);
+    pq.push(10);
+    pq.top();
+
+    ///////////////////////////////// Set (Sorted and unique) ////////////////////////////////////
+    // it is also a non linear data structure such as tree or red black red
+    set<int> set;
+    set.insert(4);
+    set.insert(6);
+    set.insert(8);
+    set.insert(9);
     
+    auto ih1 = set.find(9);
+    set.erase(6);
+    auto ih2 = set.find(8);
+    set.erase(ih1, ih2); // or we can use erase as .erase(start, end)
+
+    ///set has different kinds of function unless the previous container such as
+    // find, insert, erase, count
+
+    /////////////////////// MAP and SET are the only containers that have find as a member function or we can say as the methods
+    ///////////////////// so for other containers we should use find(start, end, what) function from <algorithm>
+    
+    //////////////////// LOWER BOUND AND UPPER BOUND ///////////////////////
+    // in set
+    auto ih3 = set.lower_bound(4); // it will returen the address of the element which is greater than or equal to this value
+    auto ih4 = set.upper_bound(4); // it will return the address of the element which is lower than or equal to this
+    // since set is unique and sorted the address will be ok
+
+    //////////////////////// MULTISET (only sorted, can store multiple instances ///////////////////////////)
+    multiset<int> ms;
+
+    ms.insert(1);
+    ms.insert(2);
+    ms.insert(3);
+    ms.insert(3);
+    ms.insert(2);
+    ms.insert(2);
+    ms.insert(1);
+    ms.insert(1);
+
+    ms.erase(3); //all 3's are erased
+
+    ms.erase(ms.find(2)); // only the first 2 will be erased
+    //ms.erase(ms.find(1), ms.find(1)+2);// the first 1 and the second 1 will be erased
+
+    ///////////////////////////////////// Unordered Set (Unique)//////////////////////////
+    unordered_set<int> us;
+    us.insert(2);
+    us.insert(3);
+    //here only the lowe and upper bound fundtions doesn't work rest of them is similar to the set container
+    // and it will have no order
+
+
+    ///////////////////////////////////// MAP ////////////////////////////////////////
+
 
     return 0;
 }
