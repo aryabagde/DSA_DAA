@@ -243,8 +243,38 @@ int main(){
     // and it will have no order
 
 
-    ///////////////////////////////////// MAP ////////////////////////////////////////
+    ///////////////////////////////////// MAP <key,value> sorted by unique keys////////////////////////////////////////
+    // key and value can be of any data type it can be int, char, pair,  list anythings
+    // also key and value can be of different data types among themselves
+    // IMP : map stores unique keys in sorted order
+    map <int, int> mpp;
+    map <int, pair<int, int>> mpp2;
+    map <pair<int,int>, int> mpp3;
 
+    mpp[1] = 2;
+    mpp.insert({2, 3});
+    mpp.emplace(4,5);
+    mpp3[{2,3}] = 5;
+    mpp3.emplace(6,7,8);
+
+    //traversing throught the maps
+    for(auto it: mpp){
+        cout<<it.first;
+        cout<<it.second;
+        cout<<endl;
+    }
+    //how to find the values in map
+    auto it9 = mpp.find(1);
+    cout<<(*it9).first;
+    // here member access(.) has the higher precedence than the unary operator(*) so that is why *(it9).first was not working
+    // need to dereference it for pair and then get their first and second member
+    
+    // same lower and upper bound functions similar to set
+
+    //////////////////////////////////////// MULTIMAP <key, value> pairs but the keys can be duplicates and will be sorted based on keys ///////////////////////////////////////////
+    
+    /////////////////////////////////////// UNordered map it will only store unique key value pairs but will not be sorted in any kind /////////////////////////////////////
+    
 
     return 0;
 }
