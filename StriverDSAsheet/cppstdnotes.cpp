@@ -274,7 +274,18 @@ int main(){
     //////////////////////////////////////// MULTIMAP <key, value> pairs but the keys can be duplicates and will be sorted based on keys ///////////////////////////////////////////
     
     /////////////////////////////////////// UNordered map it will only store unique key value pairs but will not be sorted in any kind /////////////////////////////////////
-    
+
+
+    //////////////////////////////////Algorithms ///////////////////////////////
+    // the most important one in cpp is sort, no need to write the sort functions agian and again 
+
+    // internally this sort funuction is introsort which is mixed function of 3 sorts
+
+    int a[] = {4,3,2,1};
+    sort(a, a+4); // we need to place the starting pointer and the ending pointer
+    // if vector
+    vector<int> v6 = {7,65,4,3,1};
+    sort(v6.begin(), v6.end());
 
     return 0;
 }
