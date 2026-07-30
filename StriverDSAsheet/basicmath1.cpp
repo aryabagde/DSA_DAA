@@ -8,10 +8,19 @@ void extraction_of_digits(int n){ // extracting singular numbers from the given 
         n = n/10;
     }
 }
+void count_digits(int n){
+    int count= 0;
+    while(n>0){
+        count++;
+        n = n/10;
+    }
+    cout<<count;
+}
 
 int main(){
     int n;
     cin>>n;
-    extraction_of_digits(n);
+    //extraction_of_digits(n);
+    count_digits(n);
     return 0;
 }
