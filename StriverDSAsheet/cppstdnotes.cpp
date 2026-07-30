@@ -287,5 +287,30 @@ int main(){
     vector<int> v6 = {7,65,4,3,1};
     sort(v6.begin(), v6.end());
 
+    // i can also change the starting and the ending position so that we can only sort half of the list, vector whatever
+    sort(a+2, a+4);
+
+    //if u want to sort in descending order than
+
+    sort(v6.begin(), v6.end(), greater<int>());// remember we need object of that type for greater<int>
+
+    // now suppose i want to write self written comparator or custom comparator just write comp() instead of greater<int>() and write a bool function for comp(pair<int, int>p1, pair<int, int> p2) and write the further function
+    /////////////////////////////////////////////////////IMP we can also sort the string using this function ///////////////////////////////
+    /////////////////////////////////////////////////// no of bits as 1 in the binary form ////////////////////////////////////////////
+    int num = 7; 
+    int cnt = __builtin_popcount(num);
+
+
+
+    ///////////////////////////////////////////////// Permutation of strings ////////////////////////////////////////////////////////
+    string s = "123"; 
+    do{
+        cout<<s<<endl;
+    }while(next_permutation(s.begin(), s.end()));
+
+
+    /////////////////////////////////////////////// Get the max value from the iterator /////////////////////////////////////////////////
+    int maxi = *max_element(a,a+4);        //similarly min element is also there
+
     return 0;
 }
