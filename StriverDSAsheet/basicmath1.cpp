@@ -94,9 +94,35 @@ void better_prime_count(int n){ //time complexity is O(sqrt(n))
     else cout<<"not prime";
 }
 
+void find_hcf(int n1, int n2){
+    vector<int> v;
+    for(int i=1; i<=min(n1, n2); i++){            // time complexity O(min(n1, n2))
+        if((n1%i == 0) && (n2%i == 0)) v.push_back(i);
+    }
+    cout<<v.back();
+}
+
+void rev_hcf(int n1, int n2){                    //// reducing space complexity compared to the last function
+    for(int i = min(n1, n2); i>0; i--){
+        if((n1%i == 0 ) && (n2%i == 0)){
+            cout<<i;
+            break;
+        }
+    }
+}
+
+void better_find_hcf(int n1, int n2){ //based upon uclidean formula gcd(a, b) = gcd(a-b, b) given that a>b
+    while(n1>0 && n2>0){             // now based upon the formula i can do the recursive function for  gcd(a, b) = gcd(a-b, b)
+        if(n1>n2) n1 = n1%n2;        //time complexity will be O(log min(m,n) base smthg coz we are not always dividing by 10 depends on the number)
+        else n2 = n2%n1;
+    }
+    if(n1 == 0) cout<<n2;
+    else cout<<n1;
+}
+
 int main(){
-    int n;
-    cin>>n;
+    int n1, n2;
+    cin>>n1>>n2;
     //extraction_of_digits(n);
     //count_digits(n);
     //count_log(n);
@@ -106,6 +132,8 @@ int main(){
     //print_divisor(n);
     //print_divisor_half(n);
     //brute_force_prime(n);
-    better_prime_count(n);
+    //better_prime_count(n);
+    //find_hcf(n1, n2);
+    //better_find_hcf(n1, n2);
     return 0;
 }
