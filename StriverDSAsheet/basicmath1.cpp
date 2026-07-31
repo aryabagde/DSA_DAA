@@ -39,6 +39,18 @@ void palindrome(int n){ // remember rev of number should be same which means the
     else cout<<false;
 }
 
+void armstrong(int n){
+    int arm = 0;
+    int m = n;
+    while(m>0){
+        int rm = m%10;
+        arm += pow(rm, 3);
+        m = m/10;
+    }
+    if(arm == n) cout<<"Yes";
+    else cout<<"NO";
+}
+
 int main(){
     int n;
     cin>>n;
@@ -46,6 +58,7 @@ int main(){
     //count_digits(n);
     //count_log(n);
     //reverse_num(n);
-    palindrome(n);
+    /// palindrome(n);
+    armstrong(n);
     return 0;
 }
