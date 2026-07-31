@@ -51,6 +51,49 @@ void armstrong(int n){
     else cout<<"NO";
 }
 
+void print_divisor(int n){    // time complexity is O(n)
+    for(int i=1; i<=n; i++){
+        if(n%i == 0) cout<<i<<" ";
+    }
+}
+
+void print_divisor_half(int n){  //time complexity is O(sqrt of n)
+    vector<int> v;
+    for(int i=1; i<=sqrt(n); i++){
+        if(n%i == 0){
+            v.push_back(i);
+            if((n/i)!= i){
+                v.push_back(n/i);
+            }
+        }
+    }
+    sort(v.begin(), v.end());       // time complexity is O(i log i) where i is the number of factors
+    for(auto it: v){
+        cout<<it<<" ";
+    }
+}
+
+void brute_force_prime(int n){  //time complexity is O(n)
+    int count = 0;
+    for( int i = 1; i<=n; i++){
+        if(n%i == 0) count++;
+    }
+    if(count == 2) cout<<"yes";
+    else cout<<"no";
+}
+
+void better_prime_count(int n){ //time complexity is O(sqrt(n))
+    int count=0;
+    for(int i =1; i<=sqrt(n); i++){
+        if(n%i ==0){
+            count++;
+            if((n/i)!=i) count++;
+        }
+    }
+    if(count ==2)cout<<"prime";
+    else cout<<"not prime";
+}
+
 int main(){
     int n;
     cin>>n;
@@ -59,6 +102,10 @@ int main(){
     //count_log(n);
     //reverse_num(n);
     /// palindrome(n);
-    armstrong(n);
+    //armstrong(n);
+    //print_divisor(n);
+    //print_divisor_half(n);
+    //brute_force_prime(n);
+    better_prime_count(n);
     return 0;
 }
