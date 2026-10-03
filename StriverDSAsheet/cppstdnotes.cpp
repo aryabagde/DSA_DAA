@@ -2,6 +2,7 @@
 using namespace std;
 
 int main(){
+    //Pair vectors are called stl containers but specifically the vector is called sequence container and pair is called utility container
     //Pair container
     //definition should be self explanatory
     pair<int, int> p = {1,2};
