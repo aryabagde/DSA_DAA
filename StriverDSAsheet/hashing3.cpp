@@ -4,7 +4,7 @@ using namespace std;
 // so before this we have done hashing using array but we know that even if we get the time complxity as O(1)
 // due to pre computation we get a space complexity of O(10^7)inside main function and O(10^9) outside main function
 // so to reduce this we will use map and sets
-
+// also find the limits of array hashing
 
 int main(){
     map<int, int> mpp;   //pairs based on sorted and unique keys
