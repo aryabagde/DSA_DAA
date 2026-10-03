@@ -2,7 +2,7 @@
 using namespace std;
 
 //Selection sort first select and then swap
-
+// time complexity is O(n^2) for best, avg and worst case scenario
 int main(){
     int s;
     cin>>s;
