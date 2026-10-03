@@ -21,9 +21,9 @@ int main(){
         } // after this i will get the smallest value from i to the end of the array
     
         if(min != i){   //swap function
-            int third = arr[min];
+            int temp = arr[min];
             arr[min] = arr[i];
-            arr[i] = third;
+            arr[i] = temp;
         }
 
         for(int k=0; k<s; k++){
