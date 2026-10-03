@@ -8,12 +8,14 @@ int main(){
    map <int, int> mp;
    for(int i=0; i<m; i++){
         cin>>arr[i];
-        mp[arr[i]]++;
+        mp[arr[i]]++;  //done hashing here
    }
 
-   //hashing
-
-
+   // iterate over map
+   for(auto it: mp){
+        cout<<it.first<<" "<<it.second<<endl;
+   }    // sorted and unique key values
+   cout<<"real answer"<<endl;
    int n;
    cin>>n;
    while(n--){
