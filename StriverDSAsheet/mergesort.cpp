@@ -4,7 +4,7 @@ using namespace std;
 //Merge sort: divide, sort and merge
 // need recursion
 // merge sort without any pointers or vectors
-// time complexity is O(nlogn)
+// time complexity is O(nlogn) but space commmplexity is O(n)
 
 void printarray(int arr[], int n){
     for(int i=0; i<n; i++){
