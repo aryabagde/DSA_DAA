@@ -48,7 +48,22 @@ void rotateleftbydoptimal(int arr[], int n, int d){  // the most optimal method
         cout<<arr[i]<<" ";
     }
     cout<<endl;
+ // IMP the interview may ask to write the reverse function on your own so u may need to write it remember swapping and front++ and end-- until they overlap each other
+}
 
+void rotaterightbydoptimal(int arr[], int n, int d){  // follow up question
+
+    d = d % n;  // important
+
+    reverse(arr, arr + n - d);
+    reverse(arr + n - d, arr + n);
+    reverse(arr, arr + n);
+
+    for(int i = 0; i < n; i++){
+        cout << arr[i] << " ";
+    }
+
+    cout << endl;
 }
 
 
@@ -59,9 +74,13 @@ int main(){
     for(int i=0; i<n; i++){
         cin>>arr[i];
     }
+    int d; 
+    cin>>d;
+    // also here for d use d%n uk for the cases where d>n
     //rotateleft(arr, n);
     //rotateleftbydbrute(arr, n, 3);
     rotateleftbydoptimal(arr, n, 3);
+    rotaterightbydoptimal(arr, n, d);
 
     return 0;
 }
