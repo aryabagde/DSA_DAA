@@ -1,1 +1,1 @@
-max value is 4
+2 is the odd value
